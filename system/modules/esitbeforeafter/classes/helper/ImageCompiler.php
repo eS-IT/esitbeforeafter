@@ -12,7 +12,10 @@
 
 namespace esit\esitbeforeafter\classes\helper;
 
-
+/**
+ * Class ImageCompiler
+ * @package esit\esitbeforeafter\classes\helper
+ */
 class ImageCompiler
 {
 

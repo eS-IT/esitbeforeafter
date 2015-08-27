@@ -24,13 +24,13 @@ class BeforeAfter extends \ContentElement
 
 
     /**
-	 * Template
-	 * @var string
-	 */
-	protected $strTemplate = 'ce_beforeafter';
+     * Template
+     * @var string
+     */
+    protected $strTemplate = 'ce_beforeafter';
 
 
-	/**
+    /**
      * Generate the content element
      */
     protected function compile()

@@ -60,7 +60,7 @@ class ScriptCompiler
         $this->objTemplate->strContainerId  = $strContainerId;
         $arrOptions                         = array();
 
-        foreach ($GLOBALS['esit']['beforeafter']['defaults'] as $strKey => $varValue){
+        foreach ($GLOBALS['esit']['beforeafter']['defaults'] as $strKey => $varValue) {
             $strContaoKey = strtolower('ba' . $strKey);
 
             switch ($strKey) {

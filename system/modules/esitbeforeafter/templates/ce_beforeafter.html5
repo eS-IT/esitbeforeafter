@@ -6,14 +6,16 @@
 
     <div id="<?php echo $this->strContainerId; ?>">
         <div>
-            <img alt="<?php echo $this->arrImgOne['name']; ?>"
+            <img alt="<?php echo $this->arrImgOne['meta']['title']; ?>"
+                 title="<?php echo $this->arrImgOne['meta']['title']; ?>"
                  src="<?php echo $this->arrImgOne['path']; ?>"
                  width="<?php echo $this->arrImgOne['width']; ?>"
                  height="<?php echo $this->arrImgOne['height']; ?>"
             />
         </div>
         <div>
-            <img alt="<?php echo $this->arrImgTwo['name']; ?>"
+            <img alt="<?php echo $this->arrImgTwo['meta']['title']; ?>"
+                 title="<?php echo $this->arrImgTwo['meta']['title']; ?>"
                  src="<?php echo $this->arrImgTwo['path']; ?>"
                  width="<?php echo $this->arrImgTwo['width']; ?>"
                  height="<?php echo $this->arrImgTwo['height']; ?>"

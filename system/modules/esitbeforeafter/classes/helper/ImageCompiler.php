@@ -25,8 +25,15 @@ class ImageCompiler
      */
     public static function getImageData($strImageId, $strSize)
     {
-        $objImg     = \Contao\FilesModel::findByPk($strImageId);
-        $arrSize    = deserialize($strSize);
+        $objImg             = \Contao\FilesModel::findByPk($strImageId);
+        $arrSize            = deserialize($strSize);
+        $arrMeta            = deserialize($objImg->meta);
+
+        if ($arrMeta != null && isset($arrMeta[$GLOBALS['TL_LANGUAGE']])) {
+            $arrData['meta'] = $arrMeta[$GLOBALS['TL_LANGUAGE']];
+        } else {
+            $arrData['meta']['title'] = $objImg->name;
+        }
 
         if (!is_array($arrSize)) {
             $arrSize            = getimagesize($objImg->path);

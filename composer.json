@@ -1,8 +1,14 @@
 {
   "name": "esit/esitbeforeafter",
   "description": "Die Erweiterung bindet das jQuery-Plugin [Before/After](http://www.catchmyfame.com/catchmyfame-jquery-plugins/jquery-beforeafter-plugin/) von _Catch My Fame_ in Contao ein.",
-  "keywords": ["jquery","contao", "before", "after", "image"],
-  "license": "LGPLv3",
+  "keywords": [
+    "jquery",
+    "contao",
+    "before",
+    "after",
+    "image"
+  ],
+  "license": "LGPL-3.0",
   "authors": [
     {
       "name": "Patrick Froch",
@@ -12,6 +18,14 @@
     }
   ],
   "require": {
-    "php": "5.4.*"
+    "php": ">=5.4.0",
+    "contao/core": ">=3.0.0 <4.0.0"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "system/modules/esitbeforeafter": "system/modules/esitbeforeafter"
+      }
+    }
   }
 }

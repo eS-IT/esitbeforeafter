@@ -11,6 +11,7 @@
                  src="<?php echo $this->arrImgOne['path']; ?>"
                  width="<?php echo $this->arrImgOne['width']; ?>"
                  height="<?php echo $this->arrImgOne['height']; ?>"
+                 style="max-width: none;"
             />
         </div>
         <div>
@@ -19,6 +20,7 @@
                  src="<?php echo $this->arrImgTwo['path']; ?>"
                  width="<?php echo $this->arrImgTwo['width']; ?>"
                  height="<?php echo $this->arrImgTwo['height']; ?>"
+                 style="max-width: none;"
             />
         </div>
     </div>

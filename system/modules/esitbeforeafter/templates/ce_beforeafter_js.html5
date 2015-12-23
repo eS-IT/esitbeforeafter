@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    $(function(){
-        $('#<?php echo $this->strContainerId; ?>').beforeAfter(<?php echo $this->strOptions; ?>);
+    jQuery(function(){
+        jQuery('#<?php echo $this->strContainerId; ?>').beforeAfter(<?php echo $this->strOptions; ?>);
     });
 </script>

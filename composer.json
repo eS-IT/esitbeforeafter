@@ -27,5 +27,6 @@
         "system/modules/esitbeforeafter": "system/modules/esitbeforeafter"
       }
     }
-  }
+  },
+  "abandoned": true
 }
